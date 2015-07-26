@@ -1,7 +1,6 @@
 # colinkahn.flux.getters
 
-[![Clojars
-Project](http://clojars.org/colinkahn.flux.getters/latest-version.svg)]
+![Clojars Project](http://clojars.org/colinkahn.flux.getters/latest-version.svg)
 
 Composable, memoized getters for use in [Flux](https://facebook.github.io/flux/)
 applications. It's mainly a paired down version of
