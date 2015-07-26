@@ -39,5 +39,9 @@
   IGetter
   (-getter [this m] (get m this)))
 
-(defn getter [f & segs]
-  (memoize (fn [x] (apply f (map #(-getter % x) segs)))))
+(defn getter
+  ([seg]
+   (getter identity seg))
+  ([f & segs]
+   (let [f (memoize f)]
+     (fn [x] (apply f (map #(-getter % x) segs))))))

@@ -12,8 +12,8 @@ applications. It's mainly a paired down version of
 
 ```cljs
 (def state {:selected 1 :items [:foo :bar :baz]})
-(def selected (getter identity :selected))
-(def items (getter identity :items))
+(def selected (getter :selected))
+(def items (getter :items))
 (def selected-item (getter get items selected))
 
 (selected-item state) ; => :bar

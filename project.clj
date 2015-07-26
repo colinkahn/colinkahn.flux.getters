@@ -1,4 +1,4 @@
-(defproject colinkahn.flux.getters "1.0.0"
+(defproject colinkahn.flux.getters "1.1.0"
   :description "Composable, memoized getters"
   :url "https://github.com/colinkahn/colinkahn.flux.getters"
   :license {:name "Eclipse Public License"
